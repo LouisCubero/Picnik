@@ -7,8 +7,9 @@ import {
 } from "@/components/ui/popover";
 import Image from "next/image";
 import Link from "next/link";
-import { Download, Upload, UserPlus } from "lucide-react";
+import { Download, File, FileUp, Upload, UserPlus } from "lucide-react";
 import { useQRCode } from "next-qrcode";
+import { FileUpload } from "@ark-ui/react";
 
 export const runtime = "edge";
 
@@ -54,9 +55,39 @@ export default function Page({ params }: { params: { slug: string } }) {
             </div>
           </PopoverContent>
         </Popover>
-        <Button>
-          <Upload className="h-4 w-4" />
-        </Button>
+        {/* <input type="file" /> */}
+        <FileUpload.Root
+          maxFiles={1}
+          onFileAccept={(details) => {
+            console.log("hello");
+            details.files.forEach(async (file) => {
+              await fetch(
+                "https://picnick-upload.cameronscottwills.workers.dev",
+                {
+                  headers: { key: `${params.slug}` },
+                  method: "POST",
+                  body: file,
+                }
+              );
+              console.log(file);
+            }, details);
+          }}
+        >
+          <FileUpload.Label />
+          <FileUpload.Dropzone>
+            <Button>
+              <Upload className="h-4 w-4" />
+            </Button>
+          </FileUpload.Dropzone>
+          <FileUpload.Trigger />
+          <FileUpload.ItemGroup>
+            {(files) =>
+              files.map((file, id) => (
+                <FileUpload.Item key={id} file={file}></FileUpload.Item>
+              ))
+            }
+          </FileUpload.ItemGroup>
+        </FileUpload.Root>
       </div>
     </main>
   );
