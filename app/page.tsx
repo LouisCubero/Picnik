@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
+import { Plus } from "lucide-react"
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         Live in the moment with PicNick.
       </p>
       <div className="flex space-x-4">
-        <Button variant="default">Create Group</Button>
+        <Button variant="default"><Plus className="mr-2 h-4 w-4" />Create Group</Button>
       </div>
     </main>
   );
