@@ -35,7 +35,6 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Roadblocks Overcame
 - Migration from AWS Cloud to Cloudflare, navigating through different interface
-- Pull Requests with different pod folders and storyboard edits in different branches
 
 ## Team
 
