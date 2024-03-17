@@ -6,6 +6,9 @@
 
 **Frameworks:** Next.js, Tailwind CSS,
 
+<img width="314" alt="Screen Shot 2024-03-17 at 6 49 37 AM" src="https://github.com/LouisWMV/Picnik/assets/150406650/ffc00a07-276b-420f-9e59-e54169952950">
+
+
 ## Getting Started
 
 First, run the development server:
