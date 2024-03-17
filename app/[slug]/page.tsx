@@ -10,6 +10,8 @@ import Link from "next/link";
 import { Download, Upload, UserPlus } from "lucide-react";
 import { useQRCode } from "next-qrcode";
 
+export const runtime = "edge";
+
 export default function Page({ params }: { params: { slug: string } }) {
   const { Canvas } = useQRCode();
 
