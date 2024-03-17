@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Download, Upload, UserPlus } from "lucide-react";
 
-export default function Home() {
+export default function Page({ params }: { params: { slug: string } }) {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="text-6xl font-black">
@@ -12,6 +12,7 @@ export default function Home() {
         Nick
       </h1>
       <p className="text-lg">Upload your photos</p>
+      <p className="text-md">{params.slug}</p>
       <div className="relative">
         <img
           className="rounded-lg m-4"

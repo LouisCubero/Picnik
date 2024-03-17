@@ -7,8 +7,12 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
 
-  function createGroup() {
-    router.push("/upload");
+  async function createGroup() {
+    const route = await fetch(
+      "https://picnick-groups.cameronscottwills.workers.dev"
+    );
+    const id = await route.text();
+    router.push(`/${id}`);
   }
 
   return (
