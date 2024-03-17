@@ -2,7 +2,7 @@
 
 **About:** Foster safe & comfortable social experiences by protecting user privacy. Our online application platform is designed for those who refuse to compromise their sensitive information due to social pressure. Instantly share pictures within a group without the need to share contacts, ensuring your personal data will secure. After 24 hours, all information within these group chats is purged.
 
-**Built With:** TypeScript, CloudFlare, 
+**Built With:** TypeScript, Cloudflare, 
 
 **Frameworks:** Next.js, Tailwind CSS,
 
@@ -31,7 +31,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - [Pod Merge Conflict](https://medium.com/@amlcurran/how-to-deal-with-conflicts-in-pod-folders-2eb9fa20f465)
 
 ## Roadblocks Overcame
-- Migration from AWS Cloud to CloudFlare, navigating through different interface
+- Migration from AWS Cloud to Cloudflare, navigating through different interface
 - Pull Requests with different pod folders and storyboard edits in different branches
 
 ## Team
