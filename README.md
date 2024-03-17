@@ -1,4 +1,8 @@
+# PicNik
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+**About:** Foster safe & comfortable social experiences by protecting user privacy. Our online application platform is designed for those who refuse to compromise their sensitive information due to social pressure. Instantly share pictures within a group without the need to share contacts, ensuring your personal data will secure. After 24 hours, all information within these group chats is purged.
 
 ## Getting Started
 
