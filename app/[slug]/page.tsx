@@ -46,10 +46,10 @@ export default function Page({ params }: { params: { slug: string } }) {
           </PopoverTrigger>
           <PopoverContent>
             <div>
-              <Canvas text={`https://picnick.com/${params.slug}`} />
+              <Canvas text={`https://picnick.tech/${params.slug}`} />
 
               <p className="text-popover-foreground">
-                https://picnick.com/{params.slug}
+                https://picnick.tech/{params.slug}
               </p>
             </div>
           </PopoverContent>
